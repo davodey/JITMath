@@ -2386,3 +2386,164 @@ p + .pe-heading-level6 {
   color: #231f20;
   background-color: #ffffff;
 }
+
+/* line 1, ui/scss/jit/_helpers.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 5, ui/scss/jit/_helpers.scss */
+.pos-relative {
+  position: relative;
+}
+
+/* line 9, ui/scss/jit/_helpers.scss */
+.margin-clr {
+  margin: 0 !important;
+}
+
+/* line 13, ui/scss/jit/_helpers.scss */
+.logo {
+  width: 400px;
+}
+
+/* line 1, ui/scss/jit/_flex.scss */
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 5, ui/scss/jit/_flex.scss */
+.space-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+/* line 9, ui/scss/jit/_flex.scss */
+.flex-start {
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+/* line 13, ui/scss/jit/_flex.scss */
+.align-center {
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+}
+
+/* line 1, ui/scss/jit/_buttons.scss */
+.menu-btn {
+  background-color: transparent;
+  color: #107aca;
+  border-color: transparent;
+}
+/* line 7, ui/scss/jit/_mixins.scss */
+.menu-btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* line 5, ui/scss/jit/_buttons.scss */
+.save-btn {
+  background-color: #6abb6c;
+  color: #fff;
+  border-color: #3c833e;
+}
+/* line 7, ui/scss/jit/_mixins.scss */
+.save-btn:hover {
+  background-color: #3c833e;
+  border-color: #3c833e;
+}
+@media (max-width: 640px) {
+  /* line 5, ui/scss/jit/_buttons.scss */
+  .save-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* line 11, ui/scss/jit/_buttons.scss */
+.practice-btn {
+  background-color: #ff6137;
+  color: #fff;
+  border-color: #d02c00;
+}
+/* line 7, ui/scss/jit/_mixins.scss */
+.practice-btn:hover {
+  background-color: #d02c00;
+  border-color: #d02c00;
+}
+@media (max-width: 640px) {
+  /* line 11, ui/scss/jit/_buttons.scss */
+  .practice-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* line 16, ui/scss/jit/_buttons.scss */
+.landing-btn {
+  background-color: transparent;
+  color: #231f20;
+  border-color: transparent;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 19px;
+}
+/* line 7, ui/scss/jit/_mixins.scss */
+.landing-btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* line 1, ui/scss/jit/_card.scss */
+.wrong {
+  color: #ee2b1b;
+  border: 1px solid #ee2b1b;
+}
+
+/* line 5, ui/scss/jit/_card.scss */
+.correct {
+  color: #6abb6c;
+  border: 1px solid #6abb6c;
+}
+
+/* line 9, ui/scss/jit/_card.scss */
+.card-bg-gray {
+  background-color: #b3b3b3;
+}
+
+/* line 13, ui/scss/jit/_card.scss */
+.card-icon-container {
+  padding: 15px;
+}
+
+/* line 1, ui/scss/jit/_forms.scss */
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* line 8, ui/scss/jit/_forms.scss */
+.icon-container {
+  position: absolute;
+}
+/* line 11, ui/scss/jit/_forms.scss */
+.icon-container.right-center {
+  right: 15px;
+  top: 7px;
+}
+
+/* line 1, ui/scss/jit/_text.scss */
+.correct-text {
+  color: #6abb6c;
+}

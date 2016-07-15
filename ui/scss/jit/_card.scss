@@ -1,0 +1,15 @@
+.wrong {
+  @include card-color($red);
+}
+
+.correct {
+  @include card-color($green);
+}
+
+.card-bg-gray {
+  background-color:$gray;
+}
+
+.card-icon-container {
+  padding:15px;
+}

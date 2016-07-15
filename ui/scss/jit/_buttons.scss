@@ -1,0 +1,30 @@
+.menu-btn {
+  @include btn-color(transparent, $blue);
+}
+
+.save-btn {
+  @include btn-color($green, $white);
+  @include mobile-button;
+
+}
+
+.practice-btn {
+  @include btn-color($orange, $white);
+  @include mobile-button;
+}
+
+.landing-btn {
+  @include btn-color(transparent, $black);
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding:19px;
+}
+
+.icon-tap-text {
+  //display:block;
+  //position:relative;
+  //top:-15px;
+}

@@ -1,0 +1,15 @@
+select {
+  // removes default browser arrows
+  appearance: none;
+}
+
+
+// contains the down icon over select boxes
+.icon-container {
+  position:absolute;
+
+  &.right-center {
+    right:15px;
+    top:7px;
+  }
+}

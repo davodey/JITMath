@@ -1,0 +1,24 @@
+@mixin btn-color($color1, $color2 ) {
+
+  background-color: $color1;
+  color: $color2;
+  border-color: darken($color1, 20%);
+
+  &:hover {
+    background-color:darken($color1, 20%);
+    border-color: darken($color1, 20%);
+  }
+}
+
+@mixin card-color($color) {
+  color: $color;
+  border:1px solid $color;
+}
+
+
+@mixin mobile-button {
+  @media (max-width:640px) {
+    width:100%;
+    margin:5px 0;
+  }
+}
