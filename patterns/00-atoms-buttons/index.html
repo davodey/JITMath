@@ -4,10 +4,13 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    
+
     <link rel="stylesheet" href="../../css/style.css?" media="all" />
     <link rel="stylesheet" href="../../css/pattern-scaffolding.css?" media="all" />
-    
+
+    <!--Font Awesome-->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
     <!-- never cache patterns -->
 <meta http-equiv="cache-control" content="max-age=0" />
@@ -16,14 +19,14 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1468560076669" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1468560076669" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1468619203396" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1468619203396" media="all" />
 
     <!-- End Pattern Lab -->
-  
+
   </head>
   <body class="">
-    
+
 <!-- View All Patterns in a Pattern Sub-Type -->
 <div class="sg-main" role="main">
   
@@ -51,12 +54,47 @@
     
   </div>
   <div class="sg-pattern-example">
-    <button>Click Me Again</button>
-sfdsf
+    <button class="pe-btn pe-btn--primary pe-btn--large">Primary</button>
+<button class="pe-btn pe-btn--large">Secondary</button>
+
+<!--Need to request bars icon to be put into elements-->
+<button class="pe-btn pe-btn--large menu-btn">
+    <span class="fa fa-bars fa-lg menu-btn" aria-hidden="true"></span>
+    <span class="pe-sr-only">menu</span>
+</button>
+
+<button class="pe-btn pe-btn--primary pe-btn--large save-btn">Save Button</button>
+<button class="pe-btn pe-btn--primary pe-btn--large practice-btn">Practice Button</button>
+
 
   </div>
   <script type="text/json" id="sg-pattern-data-atoms-buttons" class="sg-pattern-data">
     {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternExtension":".mustache","patternName":"Buttons","patternPartial":"atoms-buttons","patternState":"","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="atoms-icon-tap-button" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-atoms-buttons-icon-tap-button&#x2F;00-atoms-buttons-icon-tap-button.html" class="patternLink" data-patternpartial="atoms-icon-tap-button" title="Link to Pattern">
+          Icon Tap Button
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="atoms-icon-tap-button" title="View Pattern Info" id="sg-pattern-extra-toggle-atoms-icon-tap-button" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-atoms-icon-tap-button">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <button class="pe-btn pe-btn--large landing-btn">
+    <span class="fa fa-folder-open fa-3x" aria-hidden="true"></span>
+    <span class="pe-sr-only">folder</span>
+    <span class="icon-tap-text">Browse</span>
+</button>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-atoms-icon-tap-button" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"buttons"},"patternExtension":".mustache","patternName":"Icon Tap Button","patternPartial":"atoms-icon-tap-button","patternState":"","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
   </div> <!--end #sg-patterns-->
@@ -101,10 +139,10 @@ sfdsf
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1468560076669">
+<script id="pl-js-polyfill-insert-1468619203396">
   (function() {
     if (self != top) {
-      var cb = '1468560076669';
+      var cb = '1468619203396';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -114,10 +152,10 @@ sfdsf
   })();
 </script>
 
-<script id="pl-js-insert-1468560076669">
+<script id="pl-js-insert-1468619203396">
   (function() {
     if (self != top) {
-      var cb = '1468560076669';
+      var cb = '1468619203396';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
