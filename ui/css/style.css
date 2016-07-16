@@ -2407,6 +2407,31 @@ p + .pe-heading-level6 {
   width: 400px;
 }
 
+/* line 17, ui/scss/jit/_helpers.scss */
+.border-right {
+  border-right: 1px solid #b3b3b3;
+}
+
+/* line 21, ui/scss/jit/_helpers.scss */
+.border-bottom {
+  border-bottom: 1px solid #b3b3b3;
+}
+
+/* line 25, ui/scss/jit/_helpers.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 29, ui/scss/jit/_helpers.scss */
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+/* line 33, ui/scss/jit/_helpers.scss */
+.padding-top {
+  padding-top: 15px;
+}
+
 /* line 1, ui/scss/jit/_flex.scss */
 .flex {
   display: -ms-flexbox;
@@ -2420,12 +2445,18 @@ p + .pe-heading-level6 {
 }
 
 /* line 9, ui/scss/jit/_flex.scss */
+.justify-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+/* line 13, ui/scss/jit/_flex.scss */
 .flex-start {
   -ms-flex-pack: start;
       justify-content: flex-start;
 }
 
-/* line 13, ui/scss/jit/_flex.scss */
+/* line 17, ui/scss/jit/_flex.scss */
 .align-center {
   -ms-flex-align: center;
       -ms-grid-row-align: center;
