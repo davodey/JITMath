@@ -8,6 +8,9 @@
 
 }
 
+.mobile-resize {
+  @include mobile-button;
+}
 .practice-btn {
   @include btn-color($orange, $white);
   @include mobile-button;

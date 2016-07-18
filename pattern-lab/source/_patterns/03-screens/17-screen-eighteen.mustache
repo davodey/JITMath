@@ -1,0 +1,22 @@
+{{> components-navigation}}
+<div class="container padding">
+  {{> atoms-questions}}
+</div>
+
+<div class="container padding">
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+</div>
+
+<div class="container padding text-center">
+  {{>atoms-correct-text}}
+</div>
+
+<div class="container padding">
+  {{>atoms-save-button(save: "Save to My Problems")}}
+  {{>atoms-primary-button(primary: "Export Problem", added-class: "mobile-resize")}}
+  {{>atoms-practice-button(practice: "Practice Similar Problems")}}
+</div>
+

@@ -2,6 +2,10 @@
   display:flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -12,6 +16,10 @@
 
 .flex-start {
   justify-content: flex-start;
+}
+
+.flex-end {
+  align-items: flex-end;
 }
 
 .align-center {

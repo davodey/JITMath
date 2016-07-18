@@ -1,0 +1,21 @@
+{{> components-navigation}}
+<div class="container padding">
+  {{> atoms-questions}}
+</div>
+
+<div class="container padding">
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "14px")}}
+</div>
+
+<div class="container padding">
+    {{> atoms-steps(step: "4/4")}}
+    <div class="answers margin-top">
+      {{>components-cards-question-answer(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "21px")}}
+      {{>components-cards-question-answer(answer: "Add 2", math-top: "3x + 2 = 10", math-bottom-left: "+2", math-bottom-right: "+2", align-math: "17px")}}
+      {{>components-cards-question-answer(answer: "Multiply 2", math-top: "3x + 2 = 10", math-bottom-left: "x2", math-bottom-right: "x2", align-math: "18px")}}
+      {{>components-cards-question-answer(answer: "Divide 2", math-top: "3x + 2 = 10", math-bottom-left: "/2", math-bottom-right: "/2", align-math: "22px")}}
+    </div>
+</div>
+
