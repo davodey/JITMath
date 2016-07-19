@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/style.css?1468878012840" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1468878012840" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1468955619898" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1468955619898" media="all" />
 
     <!--Font Awesome-->
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
@@ -19,8 +19,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1468878012840" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1468878012840" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1468955619898" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1468955619898" media="all" />
 
     <!-- End Pattern Lab -->
 
@@ -33,7 +33,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/djXpvI_VrAY" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="padding text-center">
-        <button class="pe-btn pe-btn--primary pe-btn--large " onclick="window.location.href=''">Close Video</button>
+        <button class="pe-btn pe-btn--primary pe-btn--large " onclick="window.location.href='&#x2F;patterns&#x2F;03-screens-03-screen-four&#x2F;03-screens-03-screen-four.html'">Close Video</button>
 
 
     </div>
@@ -55,9 +55,9 @@
         <span class="fa fa-chevron-down" aria-hidden="true"></span>
     </div>
     <div class="pe-select full-width margin-clr">
-        <select id="se1" class="full-width">
-            <option value="Economics">Economics</option>
-            <option value="Please Select">Please Select</option>
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option disabled value="" >Select discipline</option>
+            <option selected value="&#x2F;patterns&#x2F;03-screens-02-screen-three&#x2F;03-screens-02-screen-three.html">Economics</option>
         </select>
     </div>
 </div>
@@ -67,9 +67,9 @@
         <span class="fa fa-chevron-down" aria-hidden="true"></span>
     </div>
     <div class="pe-select full-width margin-clr">
-        <select id="se1" class="full-width">
-            <option value="Price Elasticity">Price Elasticity</option>
-            <option value="Please Select">Please Select</option>
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option disabled value="" >Select Topic</option>
+            <option selected value="&#x2F;patterns&#x2F;03-screens-03-screen-four&#x2F;03-screens-03-screen-four.html">Price Elasticity</option>
         </select>
     </div>
 </div>
@@ -81,9 +81,9 @@
         <span class="fa fa-chevron-down" aria-hidden="true"></span>
     </div>
     <div class="pe-select full-width margin-clr">
-        <select id="se1" class="full-width">
-            <option value="Type">Type</option>
-            <option value="Practice">Practice</option>
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option selected disabled value="" >Type</option>
+            <option  value="&#x2F;patterns&#x2F;03-screens-06-screen-seven&#x2F;03-screens-06-screen-seven.html">Practice</option>
         </select>
     </div>
 </div>
@@ -93,9 +93,9 @@
         <span class="fa fa-chevron-down" aria-hidden="true"></span>
     </div>
     <div class="pe-select full-width margin-clr">
-        <select id="se1" class="full-width">
-            <option value="Sort by">Sort by</option>
-            <option value="Sort one">Sort one</option>
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option selected disabled value="" >Sort by</option>
+            <option disabled value="">Sort one</option>
         </select>
     </div>
 </div>
@@ -105,65 +105,75 @@
 
 <div class="container padding scroll">
     <div class="container padding border-top padding-top">
-      <div class="pe-card flex flex-start align-center card-bg-gray margin-bottom">
-    <div class="card-icon-container">
-        <span class="fa fa-youtube-play fa-3x" aria-hidden="true"></span>
-    </div>
-    <div class="pe-card__content">
-        Calculate Price Elasticity Video
-    </div>
-</div>
+      <a href="" class="card-link">
+  <div class="pe-card flex flex-start align-center card-bg-gray margin-bottom link">
+      <div class="card-icon-container">
+          <span class="fa fa-youtube-play fa-3x" aria-hidden="true"></span>
+      </div>
+      <div class="pe-card__content">
+          Calculate Price Elasticity Video
+      </div>
+  </div>
+</a>
 
     </div>
     <div class="container padding border-top padding-top">
         <p class="padding-top text-center">Practice Problems:</p>
-      <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
-    <div class="pe-card__content">
-        Calculate Price Elasticity - If Neils elasticity of...
-    </div>
-    <div class="card-icon-container">
-        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    </div>
-</div>
+      <a href="" class="card-link">
+  <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
+      <div class="pe-card__content">
+          Calculate Price Elasticity - If Neils elasticity of...
+      </div>
+      <div class="card-icon-container">
+          <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      </div>
+  </div>
+</a>
 
 
-      <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
-    <div class="pe-card__content">
-        Calculate Price Elasticity - Yesterday the price was
-    </div>
-    <div class="card-icon-container">
-        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    </div>
-</div>
+      <a href="&#x2F;patterns&#x2F;03-screens-07-screen-eight&#x2F;03-screens-07-screen-eight.html" class="card-link">
+  <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
+      <div class="pe-card__content">
+          Calculate Price Elasticity - Yesterday the price was
+      </div>
+      <div class="card-icon-container">
+          <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      </div>
+  </div>
+</a>
 
 
-      <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
-    <div class="pe-card__content">
-        Calculate Price Elasticity - Kate raises the price of...
-    </div>
-    <div class="card-icon-container">
-        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    </div>
-</div>
+      <a href="" class="card-link">
+  <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
+      <div class="pe-card__content">
+          Calculate Price Elasticity - Kate raises the price of...
+      </div>
+      <div class="card-icon-container">
+          <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      </div>
+  </div>
+</a>
 
 
     </div>
     <div class="container padding border-top padding-top">
         <p class="padding-top text-center">How To:</p>
-      <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
-    <div class="pe-card__content">
-        How To: Calculate elasticity
-    </div>
-    <div class="card-icon-container">
-        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-    </div>
-</div>
+      <a href="" class="card-link">
+  <div class="pe-card flex space-between align-center card-bg-gray margin-bottom">
+      <div class="pe-card__content">
+          How To: Calculate elasticity
+      </div>
+      <div class="card-icon-container">
+          <span class="fa fa-chevron-right" aria-hidden="true"></span>
+      </div>
+  </div>
+</a>
 
 
     </div>
 </div>
 
-  
+
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
   {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-primary-button","lineagePath":"../../patterns/00-atoms-buttons-primary-button/00-atoms-buttons-primary-button.html"},{"lineagePattern":"layouts-navigation-selected-topic-layout","lineagePath":"../../patterns/02-layouts-navigation-selected-topic-layout/02-layouts-navigation-selected-topic-layout.html"},{"lineagePattern":"atoms-cards-video","lineagePath":"../../patterns/00-atoms-cards-cards-video/00-atoms-cards-cards-video.html"},{"lineagePattern":"atoms-cards-generic-arrow","lineagePath":"../../patterns/00-atoms-cards-cards-generic-arrow/00-atoms-cards-cards-generic-arrow.html"}],"lineage":[{"lineagePattern":"atoms-primary-button","lineagePath":"../../patterns/00-atoms-buttons-primary-button/00-atoms-buttons-primary-button.html"},{"lineagePattern":"layouts-navigation-selected-topic-layout","lineagePath":"../../patterns/02-layouts-navigation-selected-topic-layout/02-layouts-navigation-selected-topic-layout.html"},{"lineagePattern":"atoms-cards-video","lineagePath":"../../patterns/00-atoms-cards-cards-video/00-atoms-cards-cards-video.html"},{"lineagePattern":"atoms-cards-generic-arrow","lineagePath":"../../patterns/00-atoms-cards-cards-generic-arrow/00-atoms-cards-cards-generic-arrow.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"screens"},"patternExtension":".mustache","patternName":"Screen Five","patternPartial":"screens-screen-five","patternState":"","extraOutput":{}}
@@ -202,10 +212,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1468878012840">
+<script id="pl-js-polyfill-insert-1468955619898">
   (function() {
     if (self != top) {
-      var cb = '1468878012840';
+      var cb = '1468955619898';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -215,16 +225,19 @@
   })();
 </script>
 
-<script id="pl-js-insert-1468878012840">
+<script id="pl-js-insert-1468955619898">
   (function() {
     if (self != top) {
-      var cb = '1468878012840';
+      var cb = '1468955619898';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
   })();
 </script>
 
-  
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="../../js/main.js"></script>
+
   </body>
 </html>

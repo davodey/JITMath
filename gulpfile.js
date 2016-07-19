@@ -6,13 +6,8 @@ var gulp = require('gulp'),
 
 gulp.task('default', function() {
     gulp.start('compile-scss');
-    gulp.start('require-js');
     gulp.watch('ui/scss/*.scss', ['compile-scss']);
     gulp.watch('ui/scss/**/*.scss', ['compile-scss']);
-    gulp.watch('ui/js/app/*.js', ['require-js']);
-    gulp.watch('ui/js/tools/*.js', ['require-js']);
-    gulp.watch('ui/js/app/**/*.js', ['require-js']);
-    gulp.watch('ui/js/app/**/**/*.js', ['require-js']);
-
+    gulp.watch('ui/js/*.js', ['copy-js']);
 });
 

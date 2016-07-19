@@ -31,3 +31,24 @@
   //position:relative;
   //top:-15px;
 }
+
+.dropdown-container {
+   ul {
+     width:40%;
+     padding-left:0;
+     border-bottom:1px solid $gray;
+
+     li {
+       list-style-type: none;
+
+
+       a {
+         display:block;
+         border:1px solid $gray;
+         border-bottom:0;
+         padding:15px;
+         cursor: pointer;
+       }
+     }
+   }
+}
