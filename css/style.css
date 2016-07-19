@@ -2538,6 +2538,16 @@ p + .pe-heading-level6 {
   font-size: .7rem;
 }
 
+/* line 139, ui/scss/jit/_helpers.scss */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* line 143, ui/scss/jit/_helpers.scss */
+.hide {
+  display: none;
+}
+
 /* line 1, ui/scss/jit/_flex.scss */
 .flex {
   display: -ms-flexbox;
@@ -2662,6 +2672,25 @@ p + .pe-heading-level6 {
   border-color: transparent;
 }
 
+/* line 36, ui/scss/jit/_buttons.scss */
+.dropdown-container ul {
+  width: 40%;
+  padding-left: 0;
+  border-bottom: 1px solid #b3b3b3;
+}
+/* line 41, ui/scss/jit/_buttons.scss */
+.dropdown-container ul li {
+  list-style-type: none;
+}
+/* line 45, ui/scss/jit/_buttons.scss */
+.dropdown-container ul li a {
+  display: block;
+  border: 1px solid #b3b3b3;
+  border-bottom: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
 /* line 1, ui/scss/jit/_card.scss */
 .wrong {
   color: #ee2b1b;
@@ -2672,16 +2701,28 @@ p + .pe-heading-level6 {
 .correct {
   color: #6abb6c;
   border: 1px solid #6abb6c;
+  cursor: default;
 }
 
-/* line 9, ui/scss/jit/_card.scss */
+/* line 10, ui/scss/jit/_card.scss */
 .card-bg-gray {
   background-color: #b3b3b3;
 }
 
-/* line 13, ui/scss/jit/_card.scss */
+/* line 14, ui/scss/jit/_card.scss */
 .card-icon-container {
   padding: 15px;
+}
+
+/* line 18, ui/scss/jit/_card.scss */
+.card-link {
+  color: #231f20;
+  text-decoration: none;
+}
+/* line 22, ui/scss/jit/_card.scss */
+.card-link:hover {
+  color: #231f20;
+  text-decoration: underline;
 }
 
 /* line 1, ui/scss/jit/_forms.scss */

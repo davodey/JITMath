@@ -3,9 +3,9 @@
         <span class="fa fa-chevron-down" aria-hidden="true"></span>
     </div>
     <div class="pe-select full-width margin-clr">
-        <select id="se1" class="full-width">
-            <option value="{{select-option-one}}">{{select-option-one}}</option>
-            <option value="{{select-option-two}}">{{select-option-two}}</option>
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option {{selected-one}} value="{{value-one}}" >{{select-option-one}}</option>
+            <option {{selected-two}} value="{{value-two}}">{{select-option-two}}</option>
         </select>
     </div>
 </div>

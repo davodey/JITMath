@@ -1,4 +1,4 @@
-<div class="pe-card">
+<div class="pe-card cursor-pointer" data-answer="{{correct-or-wrong}}">
     <div class="pe-card__content flex space-between align-center">
        <div class="answer">
            <span class=""><i class="fa fa-circle-thin margin-right" aria-hidden="true"></i>{{answer}}</span>
@@ -12,5 +12,7 @@
             </div>
         </div>
     </div>
+    <div class="pe-card__content text-center hide answer-big">
+      {{>atoms-correct-text}}
+    </div>
 </div>
-

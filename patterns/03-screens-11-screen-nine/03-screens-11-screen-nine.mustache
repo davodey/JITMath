@@ -1,0 +1,15 @@
+{{> components-navigation}}
+<div class="container padding">
+  {{> atoms-questions}}
+</div>
+
+<div class="container padding">
+  {{>components-cards-question-answer-correct-progress(answer: "Subtract 2", math-top: "3x + 2 = 10", math-bottom-left: "-2", math-bottom-right: "-2", align-math: "21px")}}
+</div>
+
+<div class="container padding">
+    {{> atoms-steps(step: "2/4")}}
+      {{>layouts-problem-step-two}}
+  {{>atoms-primary-button(primary: "Next Step", added-class: "mobile-resize next hide", url: '{{link.screens-screen-ten}}')}}
+</div>
+
