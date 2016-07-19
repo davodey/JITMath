@@ -2481,18 +2481,56 @@ p + .pe-heading-level6 {
 .scroll {
   height: 450px;
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
-/* line 92, ui/scss/jit/_helpers.scss */
-.overlay {
+/* line 93, ui/scss/jit/_helpers.scss */
+.overlay, .menu-overlay, .construction-overlay, .calculate-overlay, .howto-overlay {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   background: #231f20;
+  top: 0;
+  left: 0;
 }
 
-/* line 100, ui/scss/jit/_helpers.scss */
+/* line 102, ui/scss/jit/_helpers.scss */
+.menu-overlay {
+  width: 75%;
+}
+/* line 106, ui/scss/jit/_helpers.scss */
+.menu-overlay ul {
+  padding-left: 0;
+}
+/* line 110, ui/scss/jit/_helpers.scss */
+.menu-overlay li {
+  list-style-type: none;
+  border-bottom: 1px solid #343434;
+}
+/* line 114, ui/scss/jit/_helpers.scss */
+.menu-overlay a {
+  color: #b3b3b3;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+/* line 121, ui/scss/jit/_helpers.scss */
+.menu-overlay span {
+  padding-right: 15px;
+}
+
+/* line 126, ui/scss/jit/_helpers.scss */
+.construction-overlay {
+  background: #fff;
+}
+
+/* line 134, ui/scss/jit/_helpers.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 138, ui/scss/jit/_helpers.scss */
 .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -2500,7 +2538,7 @@ p + .pe-heading-level6 {
   padding-top: 25px;
   height: 0;
 }
-/* line 106, ui/scss/jit/_helpers.scss */
+/* line 144, ui/scss/jit/_helpers.scss */
 .video iframe {
   position: absolute;
   top: 0;
@@ -2509,41 +2547,41 @@ p + .pe-heading-level6 {
   height: 100%;
 }
 
-/* line 115, ui/scss/jit/_helpers.scss */
+/* line 153, ui/scss/jit/_helpers.scss */
 .white {
   color: #fff;
 }
 
-/* line 119, ui/scss/jit/_helpers.scss */
+/* line 157, ui/scss/jit/_helpers.scss */
 .align-math {
   margin-right: 22px;
 }
 
-/* line 123, ui/scss/jit/_helpers.scss */
+/* line 161, ui/scss/jit/_helpers.scss */
 .reverse-margin {
   margin-top: 0px;
 }
-/* line 126, ui/scss/jit/_helpers.scss */
+/* line 164, ui/scss/jit/_helpers.scss */
 .reverse-margin:first-child {
   margin-top: 15px;
 }
 
-/* line 131, ui/scss/jit/_helpers.scss */
+/* line 169, ui/scss/jit/_helpers.scss */
 .font-large {
   font-size: 2.5rem;
 }
 
-/* line 135, ui/scss/jit/_helpers.scss */
+/* line 173, ui/scss/jit/_helpers.scss */
 .font-small {
   font-size: .7rem;
 }
 
-/* line 139, ui/scss/jit/_helpers.scss */
+/* line 177, ui/scss/jit/_helpers.scss */
 .cursor-pointer {
   cursor: pointer;
 }
 
-/* line 143, ui/scss/jit/_helpers.scss */
+/* line 181, ui/scss/jit/_helpers.scss */
 .hide {
   display: none;
 }
@@ -2723,6 +2761,13 @@ p + .pe-heading-level6 {
 .card-link:hover {
   color: #231f20;
   text-decoration: underline;
+}
+
+/* line 28, ui/scss/jit/_card.scss */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* line 1, ui/scss/jit/_forms.scss */
