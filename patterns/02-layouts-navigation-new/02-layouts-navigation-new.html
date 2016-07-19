@@ -27,12 +27,15 @@
   </head>
   <body class="">
 
-<header class="padding-bottom">
+<div class="container padding">
+  <header class="padding-bottom">
     <nav class="flex space-between">
         <button class="pe-btn pe-btn--large menu-btn">
             <span class="fa fa-bars fa-lg menu-btn " aria-hidden="true"></span>
             <span class="pe-sr-only">menu</span>
         </button>
+          <button class="pe-btn pe-btn--primary pe-btn--large">Disciplines</button>
+          <button class="pe-btn pe-btn--large">Math</button>
     </nav>
 </header>
 
@@ -86,18 +89,51 @@
 </div>
 
 
-<div class="topic-container padding-top text-center">
-  <p> Page Under Construction...Please Try Again Later</p>
-  <button class="pe-btn pe-btn--primary pe-btn--large " onclick="window.location.href='&#x2F;patterns&#x2F;03-screens-00-screen-one&#x2F;03-screens-00-screen-one.html'">Back</button>
-
-
+  <div class="pe-inlineblock pos-relative full-width margin-bottom">
+    <div class="icon-container right-center">
+        <span class="fa fa-chevron-down" aria-hidden="true"></span>
+    </div>
+    <div class="pe-select full-width margin-clr">
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option selected disabled value="" >Select discipline</option>
+            <option  value="&#x2F;patterns&#x2F;03-screens-02-screen-three&#x2F;03-screens-02-screen-three.html">Economics</option>
+        </select>
+    </div>
 </div>
 
 
+    <div class="filter-container flex space-between">
+      <div class="pe-inlineblock pos-relative full-width margin-bottom">
+    <div class="icon-container right-center">
+        <span class="fa fa-chevron-down" aria-hidden="true"></span>
+    </div>
+    <div class="pe-select full-width margin-clr">
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option selected disabled value="" >Type</option>
+            <option disabled value="">Practice</option>
+        </select>
+    </div>
+</div>
+
+      <div class="pe-inlineblock pos-relative full-width margin-bottom">
+    <div class="icon-container right-center">
+        <span class="fa fa-chevron-down" aria-hidden="true"></span>
+    </div>
+    <div class="pe-select full-width margin-clr">
+        <select id="se1" class="full-width" onChange="window.location.href=this.value">
+            <option selected disabled value="" >Sort by</option>
+            <option disabled value="">Sort one</option>
+        </select>
+    </div>
+</div>
+
+    </div>
+
+</div>
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-navigation","lineagePath":"../../patterns/01-components-menus-navigation/01-components-menus-navigation.html"},{"lineagePattern":"layouts-under-construction","lineagePath":"../../patterns/02-layouts-under-construction/02-layouts-under-construction.html"}],"lineage":[{"lineagePattern":"components-navigation","lineagePath":"../../patterns/01-components-menus-navigation/01-components-menus-navigation.html"},{"lineagePattern":"layouts-under-construction","lineagePath":"../../patterns/02-layouts-under-construction/02-layouts-under-construction.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"screens"},"patternExtension":".mustache","patternName":"Screen Thirteen","patternPartial":"screens-screen-thirteen","patternState":"","extraOutput":{}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-navigation","lineagePath":"../../patterns/01-components-menus-navigation/01-components-menus-navigation.html"},{"lineagePattern":"atoms-select","lineagePath":"../../patterns/00-atoms-forms-select/00-atoms-forms-select.html"}],"lineage":[{"lineagePattern":"components-navigation","lineagePath":"../../patterns/01-components-menus-navigation/01-components-menus-navigation.html"},{"lineagePattern":"atoms-select","lineagePath":"../../patterns/00-atoms-forms-select/00-atoms-forms-select.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"layouts"},"patternExtension":".mustache","patternName":"Navigation New","patternPartial":"layouts-navigation-new","patternState":"","extraOutput":{}}
 </script>
 
 <script>
