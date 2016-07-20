@@ -40,6 +40,10 @@
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 
 // padding helpers
 
@@ -82,57 +86,14 @@
   margin:0 !important; // needed to overwrite pearson elements default margin
 }
 
+// color
 
 // misc helpers
 .scroll {
   height:450px;
   overflow: scroll;
-  scroll-behavior: smooth;
-}
+  -webkit-overflow-scrolling: touch;
 
-.overlay {
-  position:absolute;
-  z-index: 1;
-  width:100%;
-  height:100%;
-  background:$black;
-  top:0;
-  left:0;
-}
-.menu-overlay {
-  @extend .overlay;
-  width:75%;
-
-  ul {
-    padding-left:0;
-  }
-
-  li {
-    list-style-type: none;
-    border-bottom: 1px solid darken($gray, 50%);
-  }
-  a {
-    color:$gray;
-    text-decoration: none;
-    padding:15px;
-    display:block;
-  }
-
-  span {
-    padding-right:15px;
-  }
-}
-
-.construction-overlay {
-  @extend .overlay;
-  background:$white;
-}
-
-.calculate-overlay, .howto-overlay {
-  @extend .overlay;
-}
-.text-right {
-  text-align: right;
 }
 
 .video {
@@ -156,22 +117,6 @@
 
 .align-math {
   margin-right:22px;
-}
-
-.reverse-margin {
-  margin-top:0px;
-
-  &:first-child {
-    margin-top:15px;
-  }
-}
-
-.font-large {
-  font-size: 2.5rem;
-}
-
-.font-small {
-  font-size:.7rem;
 }
 
 .cursor-pointer {
