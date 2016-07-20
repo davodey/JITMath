@@ -181,3 +181,11 @@
 .hide {
   display:none;
 }
+
+.menu-gradient {
+  @include gradient-linear(45deg, #02101e, #585d60);
+}
+
+.footer-logo {
+  width:225px;
+}

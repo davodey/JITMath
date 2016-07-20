@@ -5,6 +5,10 @@
 .correct {
   @include card-color($green);
   cursor: default;
+
+  &.final-answer {
+    border:3px solid $green;
+  }
 }
 
 .card-bg-gray {

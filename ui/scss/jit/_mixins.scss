@@ -22,3 +22,7 @@
     margin:5px 0;
   }
 }
+
+@mixin gradient-linear($angle, $color1, $color2) {
+  background: linear-gradient($angle, $color1 0%, $color2 100%)
+}

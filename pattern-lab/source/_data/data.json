@@ -25,13 +25,13 @@
 
   "step": "1/4",
 
-  "answer": "Subtract 2",
-  "math-top": "3x + 2 = 10",
-  "math-bottom-left": "-2",
-  "math-bottom-right": "-2",
-  "align-math": "21px",
+  "answer": "",
+  "math-top": "",
+  "math-bottom-left": "",
+  "math-bottom-right": "",
+  "align-math": "",
 
   "answer-icon": "fa-circle-thin",
 
-  "correct-text": "3x + 8"
+  "correct-text": ""
 }

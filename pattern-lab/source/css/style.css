@@ -2586,6 +2586,16 @@ p + .pe-heading-level6 {
   display: none;
 }
 
+/* line 185, ui/scss/jit/_helpers.scss */
+.menu-gradient {
+  background: linear-gradient(45deg, #02101e 0%, #585d60 100%);
+}
+
+/* line 189, ui/scss/jit/_helpers.scss */
+.footer-logo {
+  width: 225px;
+}
+
 /* line 1, ui/scss/jit/_flex.scss */
 .flex {
   display: -ms-flexbox;
@@ -2628,6 +2638,18 @@ p + .pe-heading-level6 {
   -ms-flex-align: center;
       -ms-grid-row-align: center;
       align-items: center;
+}
+
+/* line 29, ui/scss/jit/_flex.scss */
+.flex-grow-2 {
+  -ms-flex-positive: 2;
+      flex-grow: 2;
+}
+
+/* line 33, ui/scss/jit/_flex.scss */
+.align-self-center {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 /* line 1, ui/scss/jit/_buttons.scss */
@@ -2741,29 +2763,33 @@ p + .pe-heading-level6 {
   border: 1px solid #6abb6c;
   cursor: default;
 }
+/* line 9, ui/scss/jit/_card.scss */
+.correct.final-answer {
+  border: 3px solid #6abb6c;
+}
 
-/* line 10, ui/scss/jit/_card.scss */
+/* line 14, ui/scss/jit/_card.scss */
 .card-bg-gray {
   background-color: #b3b3b3;
 }
 
-/* line 14, ui/scss/jit/_card.scss */
+/* line 18, ui/scss/jit/_card.scss */
 .card-icon-container {
   padding: 15px;
 }
 
-/* line 18, ui/scss/jit/_card.scss */
+/* line 22, ui/scss/jit/_card.scss */
 .card-link {
   color: #231f20;
   text-decoration: none;
 }
-/* line 22, ui/scss/jit/_card.scss */
+/* line 26, ui/scss/jit/_card.scss */
 .card-link:hover {
   color: #231f20;
   text-decoration: underline;
 }
 
-/* line 28, ui/scss/jit/_card.scss */
+/* line 32, ui/scss/jit/_card.scss */
 .truncate {
   white-space: nowrap;
   overflow: hidden;
