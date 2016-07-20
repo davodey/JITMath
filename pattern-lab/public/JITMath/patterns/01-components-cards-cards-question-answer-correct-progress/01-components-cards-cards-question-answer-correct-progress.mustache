@@ -1,0 +1,19 @@
+<div class="pe-card correct font-small {{ styleModifier }}">
+    <div class="pe-card__content flex space-between align-center">
+       <div class="answer padding-right">
+           <span class="gray">{{answer}}</span>
+       </div>
+        <div class="formula flex flex-column flex-end padding-right">
+            <div class="formula-top">
+              <span class="gray">{{math-top}}</span>
+            </div>
+            <div class="formula-bottom gray">
+                <span style="margin-right:{{align-math}}">{{math-bottom-left}}</span><span>{{math-bottom-right}}</span>
+            </div>
+        </div>
+        <div>
+          {{>atoms-correct-text}}
+        </div>
+    </div>
+</div>
+

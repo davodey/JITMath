@@ -1,10 +1,15 @@
-{{> layouts-navigation-selected-topic-types-layout}}
-<div class="container padding scroll">
-    <div class="container padding border-top padding-top">
-      {{>components-practice-heading}}
-      {{>atoms-cards-generic-arrow(card-generic-arrow: 'ABC Company has total variable costs of $50,000 and total fixed costs of….')}}
-      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Goody Picnic Tables Inc. has the following per-unit information: Selling price - $450…')}}
-      {{>atoms-cards-generic-arrow:problem(card-generic-arrow: 'Which is a better buy: 14.5 oz can for $1.99 or 28 oz. can for $3.59? ', link-url: '{{link.screens-screen-eight}}')}}
-    </div>
+{{> components-navigation}}
+<div class="container padding">
+  {{> atoms-questions}}
+</div>
+
+<div class="container padding">
+  {{>components-cards-question-answer-correct-progress(answer: "Convert to unit price equation: $1.99/14.5 and $3.59/28")}}
+</div>
+
+<div class="container padding">
+    {{> atoms-steps(step: "2/4")}}
+      {{>layouts-problem-step-two}}
+  {{>atoms-primary-button(primary: "Next Step", added-class: "mobile-resize next hide", url: '{{base-url}}{{link.screens-screen-eight}}')}}
 </div>
 

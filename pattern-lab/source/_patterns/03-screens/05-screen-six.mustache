@@ -1,0 +1,10 @@
+{{> components-navigation}}
+<div class="container padding">
+  {{> atoms-questions}}
+</div>
+<div class="container padding">
+  {{> atoms-steps}}
+  {{>layouts-problem-step-one}}
+  {{>atoms-primary-button(primary: "Next Step", added-class: "mobile-resize next hide", url: '{{base-url}}{{link.screens-screen-seven}}')}}
+</div>
+

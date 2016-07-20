@@ -2,9 +2,15 @@
 <div class="container padding">
   {{> atoms-questions}}
 </div>
+
 <div class="container padding">
-  {{> atoms-steps}}
-  {{>layouts-problem-step-one}}
-  {{>atoms-primary-button(primary: "Next Step", added-class: "mobile-resize next hide", url: '{{link.screens-screen-nine}}')}}
+  {{>components-cards-question-answer-correct-progress(answer: "Convert to unit price equation: $1.99/14.5 and $3.59/28")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Divide: $1.99/14.5 = 13.7 cents; $3.59/28 = 12.8 cents")}}
+</div>
+
+<div class="container padding">
+    {{> atoms-steps(step: "3/4")}}
+    {{>layouts-problem-step-three}}
+  {{>atoms-primary-button(primary: "Next Step", added-class: "mobile-resize next hide", url: '{{base-url}}{{link.screens-screen-nine}}')}}
 </div>
 

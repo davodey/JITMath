@@ -33,5 +33,6 @@
 
   "answer-icon": "fa-circle-thin",
 
-  "correct-text": ""
+  "correct-text": "",
+  "base-url": "/JITMath"
 }

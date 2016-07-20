@@ -1,10 +1,10 @@
 <div class="container padding">
   {{> components-navigation(more-buttons: true) }}
-  {{>atoms-select(selected-two: 'selected', selected-one: 'disabled', select-option-one: 'Select discipline', select-option-two: 'Economics', value-two: '{{link.screens-screen-three}}') }}
-  {{>atoms-select(selected-one: 'disabled', selected-two: 'selected', select-option-one: 'Select Topic', select-option-two: 'Price Per Unit', value-two: '{{link.screens-screen-four}}') }}
+  {{>atoms-select(selected-two: 'selected', selected-one: 'disabled', select-option-one: 'Select discipline', select-option-two: 'Economics', value-two: '{{base-url}}{{link.screens-screen-three}}') }}
+  {{>atoms-select(selected-one: 'disabled', selected-two: 'selected', select-option-one: 'Select Topic', select-option-two: 'Price Per Unit', value-two: '{{base-url}}{{link.screens-screen-four}}') }}
 
   <div class="filter-container flex space-between">
-    {{>atoms-select(selected-one: 'selected disabled', select-option-one: 'Type', select-option-two: 'Practice Problems', value-two: '{{link.screens-screen-seven}}')}}
+    {{>atoms-select(selected-one: 'selected disabled', select-option-one: 'Type', select-option-two: 'Practice Problems', value-two: '{{base-url}}{{link.screens-screen-five}}')}}
     {{>atoms-select(selected-one: 'selected disabled', selected-two: 'disabled', select-option-one: 'Sort by', select-option-two: 'Sort one')}}
   </div>
 </div>
