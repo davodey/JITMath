@@ -2536,6 +2536,11 @@ p + .pe-heading-level6 {
   width: 225px;
 }
 
+/* line 138, ui/scss/jit/_helpers.scss */
+.pearson-logo {
+  width: 200px;
+}
+
 /* line 1, ui/scss/jit/_flex.scss */
 .flex {
   display: -ms-flexbox;
@@ -2791,7 +2796,7 @@ select {
 
 /* line 11, ui/scss/jit/_overlay.scss */
 .menu-overlay {
-  width: 75%;
+  width: 95%;
 }
 /* line 15, ui/scss/jit/_overlay.scss */
 .menu-overlay ul {
