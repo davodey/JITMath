@@ -2784,7 +2784,7 @@ select {
 }
 
 /* line 1, ui/scss/jit/_overlay.scss */
-.overlay, .menu-overlay, .construction-overlay, .calculate-overlay, .howto-overlay {
+.overlay, .menu-overlay, .construction-overlay {
   position: absolute;
   z-index: 1;
   width: 100%;
