@@ -1,71 +1,100 @@
-<header class="padding-bottom">
+<header class="padding">
     <nav class="flex space-between">
         <button class="pe-btn pe-btn--large menu-btn">
             <span class="fa fa-bars fa-lg menu-btn " aria-hidden="true"></span>
             <span class="pe-sr-only">menu</span>
         </button>
+
         {{# more-buttons }}
-          <button class="pe-btn pe-btn--primary pe-btn--large">Disciplines</button>
-          <button class="pe-btn pe-btn--large">Math</button>
-          {{>atoms-select(selected-one: 'selected disabled', selected-two: 'disabled', select-option-one: 'Type', select-option-two: 'Practice')}}
-        {{/more-buttons}}
+        <button class="pe-btn pe-btn--primary pe-btn--large">Disciplines</button>
+        <button class="pe-btn pe-btn--large">Math</button>
+        {{>atoms-select(selected-one: 'selected disabled', selected-two: 'disabled', select-option-one: 'Type', select-option-two: 'Practice')}} {{/more-buttons}}
     </nav>
 </header>
+{{#additional}}
 
-<div class="menu-overlay white menu-gradient hide padding scroll">
-    <div class="container flex space-between">
-        <div class="container">
-            <img class="pearson-logo" src="{{base-url}}/images/PearsonLogo.png" alt="logo">
+
+<div class="container padding">
+    <div class="pe-inlineblock pos-relative full-width margin-bottom">
+        <div class="icon-container right-center">
+            <span aria-hidden="true" class="fa fa-chevron-down"></span>
         </div>
-        <div id="mobile-menu" class="text-right align-self-center">
-            <button class="pe-btn pe-btn--large menu-btn">
-                <span class="fa fa-bars fa-lg gray" aria-hidden="true"></span>
-                <span class="pe-sr-only">menu</span>
-            </button>
+        <div class="pe-select full-width margin-clr">
+
+            <select class="full-width" id="se1" onchange="window.location.href=this.value">
+                {{#select-discipline}}
+                <option disabled selected value="">Select discipline</option>
+                <option value="{{base-url}}{{link.screens-screen-three}}">Economics</option>
+                {{/select-discipline}} {{#select-topic}}
+                <option disabled value="">Select discipline</option>
+                <option selected value="{{base-url}}{{link.screens-screen-three}}">Economics</option>
+                {{/select-topic}}
+            </select>
+
         </div>
     </div>
-  <p class="text-center gray padding"> Just In Time Math</p>
-    <nav>
-        <ul>
-            <li><a class="home" href="{{base-url}}{{link.screens-screen-one}}"><span class="fa fa-home fa-lg" aria-hidden="true"></span>Home</a></li>
-            <li><a href="#"><span class="fa fa-folder-open fa-lg" aria-hidden="true"></span>Browse</a></li>
-            <li><a href="#"><span class="fa fa-search fa-lg" aria-hidden="true"></span>Search</a></li>
-            <li><a href="#"><span class="fa fa-info-circle fa-lg" aria-hidden="true"></span>About</a></li>
-            <li><a href="#"><span class="fa fa-floppy-o fa-lg" aria-hidden="true"></span>Saved Problems</a></li>
-            <li><a href="#"><span class="fa fa-question-circle fa-lg" aria-hidden="true"></span>Help</a></li>
-            <li><a href="#"><span class="fa fa-sign-out fa-lg" aria-hidden="true"></span>Logout</a></li>
-        </ul>
-    </nav>
-    <div class="container text-center">
-        <img class="footer-logo" src="{{base-url}}/images/WolframAlpha-logo.svg" alt="logo">
-    </div>
-</div>
 
-<div class="construction-overlay hide">
-    <div class="topic-container padding-top text-center">
-        <p> Page Under Construction...Please Try Again Later</p>
-        <button class="pe-btn pe-btn--primary pe-btn--large back-btn">Back</button>
+    {{#select-topic}}
+    <div class="pe-inlineblock pos-relative full-width margin-bottom">
+        <div class="icon-container right-center">
+            <span aria-hidden="true" class="fa fa-chevron-down"></span>
+        </div>
+        <div class="pe-select full-width margin-clr">
+            <select class="full-width" id="se1" onchange="window.location.href=this.value">
+                {{#select-topic-options}}
+                <option disabled selected value="">Select Topic</option>
+                <option value="{{base-url}}{{link.screens-screen-four}}">Price Per Unit</option>
+                {{/select-topic-options}} {{#select-type}}
+                <option disabled value="">Select Topic</option>
+                <option selected value="{{base-url}}{{link.screens-screen-four}}">Price Per Unit</option>
+                {{/select-type}}
+            </select>
+        </div>
     </div>
-</div>
+    {{/select-topic}}
 
-<div class="calculate-overlay hide">
-    <p class="white padding text-center">calculating price per unit </p>
-    <div class="video padding">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/djXpvI_VrAY" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="padding text-center">
-        <button class="pe-btn pe-btn--primary pe-btn--large close-btn">Close Video</button>
-    </div>
-</div>
+    <div class="filter-container flex space-between">
+        <div class="pe-inlineblock pos-relative full-width margin-bottom">
+            <div class="icon-container right-center">
+                <span aria-hidden="true" class="fa fa-chevron-down"></span>
+            </div>
+            <div class="pe-select full-width margin-clr">
+                <select class="full-width" id="se1" onchange="window.location.href=this.value">
+                    {{#select-topic-options}}
+                    <option disabled selected value="">Type</option>
+                    <option disabled value="">Practice Problems</option>
+                    {{/select-topic-options}} {{#select-type-options}}
+                    <option disabled selected value="">Type</option>
+                    <option value="{{base-url}}{{link.screens-screen-five}}">Practice Problems</option>
+                    {{/select-type-options}} {{#practice-problems}}
+                    <option disabled value="">Type</option>
+                    <option selected value="{{base-url}}{{link.screens-screen-five}}">Practice Problems</option>
+                    {{/practice-problems}}
+                </select>
 
-<div class="howto-overlay hide">
-    <p class="white padding text-center">how to: calculating price per unit </p>
-    <p class="white padding-left padding-right">Calculating elasticity of demand involves Division of Fractions, Ratios, Subtraction of Fractions, Rates, Percent, the Cartesian Coordinate Grid, and the Midpoint Formula… Here’s an example elasticity problem…</p>
-    <div class="video padding">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/djXpvI_VrAY" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="padding text-center">
-        <button class="pe-btn pe-btn--primary pe-btn--large close-howto-btn">Close Video</button>
+            </div>
+        </div>
+        <div class="pe-inlineblock pos-relative full-width margin-bottom">
+            <div class="icon-container right-center">
+                <span aria-hidden="true" class="fa fa-chevron-down"></span>
+            </div>
+            <div class="pe-select full-width margin-clr">
+
+                <select class="full-width" id="se1" onchange="window.location.href=this.value">
+                    <option disabled selected value="">Sort by</option>
+                    <option disabled value="">Sort one</option>
+                </select>
+
+            </div>
+        </div>
     </div>
 </div>
+{{/additional}} {{> components-mobile-menu }}
+
+
+
+
+
+
+
 

@@ -1,17 +1,23 @@
 {{> components-navigation}}
 <div class="container padding">
-  {{> atoms-questions}}
+    {{> atoms-questions}}
 </div>
 
 <div class="container padding">
-  {{>components-cards-question-answer-correct-progress(answer: "Convert to unit price equation: $1.99/14.5 and $3.59/28")}}
-  {{>components-cards-question-answer-correct-progress(answer: "Divide: $1.99/14.5 = 13.7 cents; $3.59/28 = 12.8 cents")}}
-  {{>components-cards-question-answer-correct-progress(answer: "Compare: 13.7 > 12.8")}}
+    {{>components-cards-question-answer-correct-progress(answer: "Convert to unit price equation: $1.99/14.5 and $3.59/28")}}
+    {{>components-cards-question-answer-correct-progress(answer: "Divide: $1.99/14.5 = 13.7 cents; $3.59/28 = 12.8 cents")}}
+    {{>components-cards-question-answer-correct-progress(answer:
+    "Compare: 13.7 > 12.8")}}
 </div>
 
 <div class="container padding">
     {{> atoms-steps(step: "4/4")}}
-  {{>layouts-problem-step-four}}
-  {{>atoms-primary-button(primary: "Finish", added-class: "mobile-resize next hide", url: '{{base-url}}{{link.screens-screen-ten}}')}}
+    <div id="answerGroup" class="answers margin-top">
+      {{>components-cards-question-answer(correct-or-wrong: 'correct', answer: "The 28 oz. can is cheaper per unit. ")}}
+      {{>components-cards-question-answer(correct-or-wrong: 'wrong', answer: "The 14.5 oz can is cheaper per unit. ")}}
+      {{>components-cards-question-answer(correct-or-wrong:'wrong', answer: "They both are equal.")}}
+      {{>components-cards-question-answer(correct-or-wrong: 'wrong', answer: "The 28 oz. can is more expensive.")}}
+    </div>
+    {{>atoms-primary-button(primary: "Finish", added-class: "mobile-resize next hide", url: '{{base-url}}{{link.screens-screen-ten}}')}}
 </div>
 
