@@ -1,0 +1,46 @@
+{{> components-navigation(additional: true, more-buttons: true, select-discipline: true, select-topic-options: true) }}
+<div class="container scroll">
+    <div class="container border-top">
+        {{>components-video-heading}}
+      {{>atoms-cards-video(card-video: 'Calculate Inflation Rate')}}
+      {{>atoms-cards-video(card-video: 'Calculate Inflation Rate')}}
+      {{>atoms-cards-video(card-video: 'Calculate Interest Rate')}}
+      {{>atoms-cards-video(card-video:'Calculate Marginal Cost')}}
+      {{>atoms-cards-video(card-video: 'Calculate Marginal Propensity to Save')}}
+      {{>atoms-cards-video(card-video: 'Calculate Recipe Yield')}}
+      {{>atoms-cards-video(card-video: 'Consumption Function')}}
+      {{>atoms-cards-video(card-video:'Cost Minimization')}}
+      {{>atoms-cards-video(card-video: 'Understand GDP')}}
+      {{>atoms-cards-video:howto(card-video: 'Understand Price Per Unit')}}
+      {{>atoms-cards-video(card-video: 'Utility Maximization')}}
+    </div>
+    <div class="container border-top">
+        {{>components-practice-heading}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Baker\'s Math')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Calculate Inflation Rate')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Calculate Interest Rate')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Cost Minimization')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Estimate Annual Income ')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Price Index')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow:'Understand GDP')}}
+      {{>atoms-cards-generic-arrow:problem(card-generic-arrow: 'Understand Price Per Unit', link-url: '{{base-url}}{{link.screens-screen-six}}')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Utility Maximization') }}
+    </div>
+    <div class="container border-top">
+        {{>components-howto-heading}}
+      {{>atoms-cards-hand-video(card-hand-video: 'Calculate GDP')}}
+      {{>atoms-cards-hand-video:calculate(card-hand-video: 'Calculate Price Per Unit')}}
+      {{>atoms-cards-hand-video(card-hand-video: 'Calculate Inflation Rate')}}
+      {{>atoms-cards-hand-video(card-hand-video:'Calculate Interest Rate')}}
+      {{>atoms-cards-hand-video(card-hand-video: 'Calculate Inventory')}}
+      {{>atoms-cards-hand-video(card-hand-video: 'Calculate Value of a Stock')}}
+      {{>atoms-cards-hand-video(card-hand-video: 'Cost Minimization')}}
+      {{>atoms-cards-hand-video(card-hand-video:'Scale Recipes with Baker\'s Math')}}
+      {{>atoms-cards-hand-video(card-hand-video: 'Utility Maximization')}}
+    </div>
+</div>
+
+{{> components-video:calculate-video(calculate: true) }}
+{{> components-video:howto-video(howto: true) }}
+{{> components-construction }}
+

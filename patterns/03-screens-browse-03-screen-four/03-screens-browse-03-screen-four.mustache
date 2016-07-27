@@ -1,0 +1,21 @@
+{{> components-navigation(additional: true, more-buttons: true, select-topic: true, select-type: true, select-type-options: true) }}
+<div class="container scroll">
+    <div class="container border-top">
+        {{>components-video-heading}}
+      {{>atoms-cards-video:calculate(card-video: 'Calculate Price Per Unit')}}
+    </div>
+    <div class="container border-top">
+        {{>components-practice-heading}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'ABC Company has total variable costs of $50,000 and total fixed costs of….')}}
+      {{>atoms-cards-generic-arrow(card-generic-arrow: 'Goody Picnic Tables Inc. has the following per-unit information: Selling price - $450…')}}
+      {{>atoms-cards-generic-arrow:problem(card-generic-arrow: 'Which is a better buy: 14.5 oz can for $1.99 or 28 oz. can for $3.59? ', link-url: '{{base-url}}{{link.screens-screen-six}}')}}
+    </div>
+    <div class="container border-top">
+        {{>components-howto-heading}}
+      {{>atoms-cards-hand-video:howto(card-hand-video: 'Calculate Price Per Unit')}}
+    </div>
+</div>
+{{> components-video:calculate-video(calculate: true) }}
+{{> components-video:howto-video(howto: true) }}
+{{> components-construction }}
+

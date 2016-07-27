@@ -1,19 +1,33 @@
-<div id=""
 {{> components-navigation}}
-<div class="topic-container padding-top">
+<div class="padding-top">
     <div class="title full-width text-center">
         <p>{{topic-help}}</p>
     </div>
     <div class="icon-row padding-bottom border-bottom">
-        {{>components-topic-selection}}
+        <div class="select-topic flex">
+            <div class="flex justify-center full-width border-right">
+              {{> atoms-icon-tap-browse-button }}
+            </div>
+            <div class="flex justify-center full-width">
+              {{> atoms-icon-tap-search-button }}
+            </div>
+        </div>
+
     </div>
 </div>
-<div class="topic-container padding-top">
+<div class="padding-top">
     <div class="title full-width text-center">
         <p>{{input-problems}}</p>
     </div>
     <div class="icon-row padding-bottom">
-        {{>components-input-problem}}
+        <div class="select-topic flex">
+            <div class="flex justify-center full-width border-right">
+              {{> atoms-icon-tap-type-button }}
+            </div>
+            <div class="flex justify-center full-width">
+              {{> atoms-icon-tap-photo-button }}
+            </div>
+        </div>
     </div>
 </div>
 {{> components-construction }}

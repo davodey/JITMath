@@ -1,0 +1,19 @@
+{{> components-navigation}}
+<div class="scroll-calc">
+  {{>components-equation-one(step-one: true, step-two: true)}}
+    <div class="container text-center">
+      {{>atoms-large-text(large-text: 'Step 3/6') }}
+    </div>
+    <div class="container no-padding-bottom">
+      {{>atoms-input(placeholder-text: 'Enter Step 3')}}
+    </div>
+    <div class="container text-center">
+        <div class="container hint-bg border text-center margin-bottom">
+            <span> Hint: Evaluate 7<sup>2</sup> </span>
+        </div>
+      {{>atoms-save-button(save: "Show Me Step")}}
+      {{>atoms-primary-button(primary: "Submit")}}
+    </div>
+</div>
+
+{{>components-calculator}}

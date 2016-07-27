@@ -1,0 +1,21 @@
+{{> components-navigation}}
+<div class="scroll-calc">
+  {{>components-equation-one(step-one: true, step-two: true, step-three: true)}}
+    <div class="container text-center">
+      {{>atoms-large-text(large-text: 'Step 4/6') }}
+    </div>
+    <div class="container no-padding-bottom">
+      {{>atoms-input(placeholder-text: 'Enter Step 4')}}
+    </div>
+    <div class="container text-center">
+        <div class="container hint-bg border text-center margin-bottom">
+            <span> Hint: Multiply 2 and 14 together</span>
+        </div>
+        <div class="container hint-bg border margin-bottom">
+          {{>atoms-equation-four-step}}
+        </div>
+      {{>atoms-primary-button(primary: "Submit")}}
+    </div>
+</div>
+
+{{>components-calculator}}

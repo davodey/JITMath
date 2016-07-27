@@ -1,0 +1,18 @@
+{{> components-navigation}}
+<div class="scroll-calc">
+  {{>components-equation-one}}
+  <div class="container text-center">
+    {{>atoms-large-text(large-text: 'Step 1/6') }}
+  </div>
+  <div class="container">
+    {{>atoms-input:wrong(placeholder-text: 'Enter Step 1', value: '70')}}
+  </div>
+  <div class="container text-center">
+      <div class="container hint-bg border text-center margin-bottom">
+          <span> Hint: Substitute 7 for x in equation </span>
+      </div>
+    {{>atoms-save-button(save: "Show Me Step")}}
+    {{>atoms-primary-button(primary: "Submit Step")}}
+  </div>
+</div>
+{{>components-calculator}}
