@@ -1,0 +1,18 @@
+{{> components-navigation}}
+<div class="container">
+  {{> atoms-text(regular-text: "Which is a better buy: 14.5 oz can for $1.99 or 28 oz. can for $3.59?")}}
+</div>
+
+<div class="container">
+  {{>components-cards-question-answer-correct-progress(answer: "Convert to unit price equation: $1.99/14.5 and $3.59/28")}}
+  {{>components-cards-question-answer-correct-progress(answer: "Divide: $1.99/14.5 = 13.7 cents; $3.59/28 = 12.8 cents")}}
+  {{>components-cards-question-answer-correct-progress(answer:"Compare: 13.7 > 12.8")}}
+  {{>components-cards-question-answer-correct-progress:final-answer(answer: "The 28 oz. can is cheaper per unit.")}}
+</div>
+
+<div class="container">
+    {{>atoms-save-button(save: "Save to My Problems")}}
+    {{>atoms-primary-button(primary: "Export Problem", added-class: "mobile-resize")}}
+    {{>atoms-practice-button(practice: "Practice Similar Problems")}}
+</div>
+

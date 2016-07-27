@@ -2,12 +2,23 @@
   width: 100%;
 }
 
+.auto-width {
+  width:auto;
+}
+
 
 // position helpers
 .pos-relative {
   position:relative;
 }
 
+.pos-absolute {
+  position:absolute;
+}
+
+.bottom-stick {
+  bottom:0;
+}
 // image helpers
 .logo {
   width:400px;
@@ -31,7 +42,7 @@
   border-top:1px solid $gray;
 }
 .no-border {
-  border:0;
+  border:0 !important; // needed to overrule elements
 }
 
 
@@ -67,9 +78,25 @@
   padding:15px;
 }
 
+.padding-light {
+  padding:5px;
+}
+.no-padding {
+  padding:0;
+}
+
+.no-padding-bottom {
+  padding-bottom:0;
+}
 
 //margin helpers
+.margin {
+  margin:15px;
+}
 
+.margin-sides {
+  margin: 0 15px;
+}
 .margin-bottom {
   margin-bottom:15px;
 }
@@ -87,6 +114,37 @@
 }
 
 // color
+.white {
+  color:$white;
+}
+
+.black {
+  color:$black;
+}
+
+.green {
+  color:$green;
+}
+
+.black-bg {
+  background-color: $black;
+}
+
+.character-bg {
+  background-color:$character-btn;
+}
+
+.special-bg {
+  background-color: $stripe;
+}
+
+.hint-bg {
+  background-color:$hint;
+}
+.no-bg {
+  background-color:none;
+  background:none;
+}
 
 // misc helpers
 .scroll {
@@ -94,6 +152,13 @@
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 
+}
+
+.scroll-calc {
+  height:370px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  
 }
 
 .video {
@@ -111,9 +176,6 @@
   }
 }
 
-.white {
-  color:$white;
-}
 
 .align-math {
   margin-right:22px;
@@ -137,4 +199,23 @@
 
 .pearson-logo {
   width:200px;
+}
+
+.box-shadow-bottom {
+  box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.75);
+}
+
+.hide-overflow {
+  overflow:hidden;
+}
+
+.flex-child-div {
+  > div {
+
+    display:flex;
+  }
+}
+
+sup {
+  font-size: .7rem;
 }

@@ -3,10 +3,14 @@ $green: #6abb6c;
 $red: #ee2b1b;
 $orange: #ff6137;
 
+
 // Element colors simplified for proto
 $blue: #107aca;
 $gray: #b3b3b3;
-$black: #231f20;
+$brightly-lit: #e6e6e6;
+$gutenberg-black: #333;
+$smoke-gray: #545454;
+$black: #000;
 $white: #fff;
 
 // button colors
@@ -17,3 +21,9 @@ $practice-btn: $orange;
 // outline colors
 $correct: $green;
 $wrong: $red;
+
+// calculator colors
+$character-btn: $gutenberg-black;
+$space-btn: $smoke-gray;
+$stripe: #4c7bff;
+$hint: $brightly-lit;

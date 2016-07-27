@@ -71,4 +71,8 @@ $(document).ready(function(){
 
     });
 
+    $('.open-construction').on('click', function(){
+        $('.construction-overlay').removeClass('hide');
+    })
+
 });

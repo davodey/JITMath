@@ -12,9 +12,11 @@
 
   "select-option-one": "Please Select",
   "select-option-two": "Option One",
+  "placeholder-text": "Enter Text Here",
 
   "topic-help": "Help by topic",
   "input-problems": "Input problem",
+  "question": "Which is a better buy: 14.5 oz can for $1.99 or 28 oz. can for $3.59?",
 
   "card-correct": "Card Content Correct",
   "card-generic": "Card Content Regular",
@@ -24,8 +26,8 @@
   "card-wrong": "Card Content Wrong",
 
   "step": "1/4",
+  "large-text": "Large Text",
 
-  "answer": "",
   "math-top": "",
   "math-bottom-left": "",
   "math-bottom-right": "",
@@ -34,5 +36,18 @@
   "answer-icon": "fa-circle-thin",
 
   "correct-text": "",
+  "regular-text": "Which is a better buy: 14.5 oz can for $1.99 or 28 oz. can for $3.59?",
+  "text": "Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.",
+
+  "calc-number":")",
+
+  "answer": {
+    "one": "X",
+    "squared": "2",
+    "two": "+ 2(X+7) - 19",
+    "em": "where x =",
+    "three": "7"
+  },
+
   "base-url": ""
 }

@@ -6,17 +6,18 @@
         </button>
 
         {{# more-buttons }}
-        <button class="pe-btn pe-btn--primary pe-btn--large">Disciplines</button>
-        <button class="pe-btn pe-btn--large">Math</button>
-        {{>atoms-select(selected-one: 'selected disabled', selected-two: 'disabled', select-option-one: 'Type', select-option-two: 'Practice')}} {{/more-buttons}}
+          <button class="pe-btn pe-btn--primary pe-btn--large auto-width">Disciplines</button>
+          <button class="pe-btn pe-btn--large auto-width">Math</button>
+          {{>atoms-select(selected-one: 'selected disabled', selected-two: 'disabled', select-option-one: 'Type', select-option-two: 'Practice')}}
+        {{/more-buttons}}
     </nav>
 </header>
 {{#additional}}
 
 
-<div class="container padding">
+<div class="container">
     <div class="pe-inlineblock pos-relative full-width margin-bottom">
-        <div class="icon-container right-center">
+        <div class="icon">
             <span aria-hidden="true" class="fa fa-chevron-down"></span>
         </div>
         <div class="pe-select full-width margin-clr">
@@ -36,7 +37,7 @@
 
     {{#select-topic}}
     <div class="pe-inlineblock pos-relative full-width margin-bottom">
-        <div class="icon-container right-center">
+        <div class="icon">
             <span aria-hidden="true" class="fa fa-chevron-down"></span>
         </div>
         <div class="pe-select full-width margin-clr">
@@ -53,13 +54,13 @@
     </div>
     {{/select-topic}}
 
-    <div class="filter-container flex space-between">
+    <div class="no-border flex space-between">
         <div class="pe-inlineblock pos-relative full-width margin-bottom">
-            <div class="icon-container right-center">
+            <div class="icon">
                 <span aria-hidden="true" class="fa fa-chevron-down"></span>
             </div>
             <div class="pe-select full-width margin-clr">
-                <select class="full-width" id="se1" onchange="window.location.href=this.value">
+                <select class="no-border full-width" id="se1" onchange="window.location.href=this.value">
                     {{#select-topic-options}}
                     <option disabled selected value="">Type</option>
                     <option disabled value="">Practice Problems</option>
@@ -75,12 +76,12 @@
             </div>
         </div>
         <div class="pe-inlineblock pos-relative full-width margin-bottom">
-            <div class="icon-container right-center">
+            <div class="icon">
                 <span aria-hidden="true" class="fa fa-chevron-down"></span>
             </div>
             <div class="pe-select full-width margin-clr">
 
-                <select class="full-width" id="se1" onchange="window.location.href=this.value">
+                <select class="no-border full-width" id="se1" onchange="window.location.href=this.value">
                     <option disabled selected value="">Sort by</option>
                     <option disabled value="">Sort one</option>
                 </select>

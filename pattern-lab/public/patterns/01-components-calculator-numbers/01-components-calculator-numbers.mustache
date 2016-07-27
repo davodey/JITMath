@@ -1,0 +1,39 @@
+<div class="container flex-child-div black-bg">
+    <div class="justify-center row circles text-center padding-bottom">
+        <span class="fa fa-circle gray margin-right" aria-hidden="true"></span>
+        <span class="fa fa-circle gray margin-right" aria-hidden="true"></span>
+        <span class="fa fa-circle gray" aria-hidden="true"></span>
+    </div>
+    <div class="row flex-child-div">
+      {{>atoms-character-button(calc-number: '7')}}
+      {{>atoms-character-button(calc-number: '8')}}
+      {{>atoms-character-button(calc-number: '9')}}
+      {{>atoms-character-button(calc-number: '(')}}
+      {{>atoms-character-button(calc-number: ')')}}
+      {{>atoms-character-button(calc-number: '/')}}
+      {{>atoms-character-button(calc-number: '-')}}
+    </div>
+    <div class="row">
+      {{>atoms-character-button(calc-number: '4')}}
+      {{>atoms-character-button(calc-number: '5')}}
+      {{>atoms-character-button(calc-number: '6')}}
+      {{>atoms-character-button(calc-number: '<')}}
+      {{>atoms-character-button(calc-number: '>')}}
+      {{>atoms-character-button(calc-number: 'X')}}
+      {{>atoms-character-button(calc-number: '+')}}
+    </div>
+    <div class="row">
+      {{>atoms-character-button(calc-number: '1')}}
+      {{>atoms-character-button(calc-number: '2')}}
+      {{>atoms-character-button(calc-number: '3')}}
+      {{>atoms-character-button(calc-number: '0')}}
+      {{>atoms-character-button(calc-number: '.')}}
+      {{>atoms-character-button(calc-number: '%')}}
+      {{>atoms-character-button(calc-number: '=')}}
+    </div>
+    <div class="row">
+      {{>atoms-character-button:small-text(calc-number: 'shift')}}
+      {{>atoms-character-button:small-text|space(calc-number: 'space')}}
+      {{>atoms-character-button:small-text(calc-number: 'enter')}}
+    </div>
+</div>

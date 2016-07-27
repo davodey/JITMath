@@ -2392,104 +2392,192 @@ p + .pe-heading-level6 {
   width: 100%;
 }
 
-/* line 7, ui/scss/jit/_helpers.scss */
+/* line 5, ui/scss/jit/_helpers.scss */
+.auto-width {
+  width: auto;
+}
+
+/* line 11, ui/scss/jit/_helpers.scss */
 .pos-relative {
   position: relative;
 }
 
-/* line 12, ui/scss/jit/_helpers.scss */
+/* line 15, ui/scss/jit/_helpers.scss */
+.pos-absolute {
+  position: absolute;
+}
+
+/* line 19, ui/scss/jit/_helpers.scss */
+.bottom-stick {
+  bottom: 0;
+}
+
+/* line 23, ui/scss/jit/_helpers.scss */
 .logo {
   width: 400px;
 }
 
-/* line 18, ui/scss/jit/_helpers.scss */
+/* line 29, ui/scss/jit/_helpers.scss */
 .border-right {
   border-right: 1px solid #b3b3b3;
 }
 
-/* line 22, ui/scss/jit/_helpers.scss */
+/* line 33, ui/scss/jit/_helpers.scss */
 .border-bottom {
   border-bottom: 1px solid #b3b3b3;
 }
 
-/* line 26, ui/scss/jit/_helpers.scss */
+/* line 37, ui/scss/jit/_helpers.scss */
 .border {
   border: 1px solid #b3b3b3;
 }
 
-/* line 30, ui/scss/jit/_helpers.scss */
+/* line 41, ui/scss/jit/_helpers.scss */
 .border-top {
   border-top: 1px solid #b3b3b3;
 }
 
-/* line 33, ui/scss/jit/_helpers.scss */
+/* line 44, ui/scss/jit/_helpers.scss */
 .no-border {
-  border: 0;
+  border: 0 !important;
 }
 
-/* line 39, ui/scss/jit/_helpers.scss */
+/* line 50, ui/scss/jit/_helpers.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 43, ui/scss/jit/_helpers.scss */
+/* line 54, ui/scss/jit/_helpers.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 50, ui/scss/jit/_helpers.scss */
+/* line 61, ui/scss/jit/_helpers.scss */
 .padding-right {
   padding-right: 15px;
 }
 
-/* line 54, ui/scss/jit/_helpers.scss */
+/* line 65, ui/scss/jit/_helpers.scss */
 .padding-left {
   padding-left: 15px;
 }
 
-/* line 58, ui/scss/jit/_helpers.scss */
+/* line 69, ui/scss/jit/_helpers.scss */
 .padding-bottom {
   padding-bottom: 15px;
 }
 
-/* line 62, ui/scss/jit/_helpers.scss */
+/* line 73, ui/scss/jit/_helpers.scss */
 .padding-top {
   padding-top: 15px;
 }
 
-/* line 66, ui/scss/jit/_helpers.scss */
+/* line 77, ui/scss/jit/_helpers.scss */
 .padding {
   padding: 15px;
 }
 
-/* line 73, ui/scss/jit/_helpers.scss */
+/* line 81, ui/scss/jit/_helpers.scss */
+.padding-light {
+  padding: 5px;
+}
+
+/* line 84, ui/scss/jit/_helpers.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 88, ui/scss/jit/_helpers.scss */
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+/* line 93, ui/scss/jit/_helpers.scss */
+.margin {
+  margin: 15px;
+}
+
+/* line 97, ui/scss/jit/_helpers.scss */
+.margin-sides {
+  margin: 0 15px;
+}
+
+/* line 100, ui/scss/jit/_helpers.scss */
 .margin-bottom {
   margin-bottom: 15px;
 }
 
-/* line 77, ui/scss/jit/_helpers.scss */
+/* line 104, ui/scss/jit/_helpers.scss */
 .margin-top {
   margin-top: 15px;
 }
 
-/* line 81, ui/scss/jit/_helpers.scss */
+/* line 108, ui/scss/jit/_helpers.scss */
 .margin-right {
   margin-right: 15px;
 }
 
-/* line 85, ui/scss/jit/_helpers.scss */
+/* line 112, ui/scss/jit/_helpers.scss */
 .margin-clr {
   margin: 0 !important;
 }
 
-/* line 92, ui/scss/jit/_helpers.scss */
+/* line 117, ui/scss/jit/_helpers.scss */
+.white {
+  color: #fff;
+}
+
+/* line 121, ui/scss/jit/_helpers.scss */
+.black {
+  color: #000;
+}
+
+/* line 125, ui/scss/jit/_helpers.scss */
+.green {
+  color: #6abb6c;
+}
+
+/* line 129, ui/scss/jit/_helpers.scss */
+.black-bg {
+  background-color: #000;
+}
+
+/* line 133, ui/scss/jit/_helpers.scss */
+.character-bg {
+  background-color: #333;
+}
+
+/* line 137, ui/scss/jit/_helpers.scss */
+.special-bg {
+  background-color: #4c7bff;
+}
+
+/* line 141, ui/scss/jit/_helpers.scss */
+.hint-bg {
+  background-color: #e6e6e6;
+}
+
+/* line 144, ui/scss/jit/_helpers.scss */
+.no-bg {
+  background-color: none;
+  background: none;
+}
+
+/* line 150, ui/scss/jit/_helpers.scss */
 .scroll {
   height: 450px;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 99, ui/scss/jit/_helpers.scss */
+/* line 157, ui/scss/jit/_helpers.scss */
+.scroll-calc {
+  height: 370px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 164, ui/scss/jit/_helpers.scss */
 .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -2497,7 +2585,7 @@ p + .pe-heading-level6 {
   padding-top: 25px;
   height: 0;
 }
-/* line 105, ui/scss/jit/_helpers.scss */
+/* line 170, ui/scss/jit/_helpers.scss */
 .video iframe {
   position: absolute;
   top: 0;
@@ -2506,39 +2594,55 @@ p + .pe-heading-level6 {
   height: 100%;
 }
 
-/* line 114, ui/scss/jit/_helpers.scss */
-.white {
-  color: #fff;
-}
-
-/* line 118, ui/scss/jit/_helpers.scss */
+/* line 180, ui/scss/jit/_helpers.scss */
 .align-math {
   margin-right: 22px;
 }
 
-/* line 122, ui/scss/jit/_helpers.scss */
+/* line 184, ui/scss/jit/_helpers.scss */
 .cursor-pointer {
   cursor: pointer;
 }
 
-/* line 126, ui/scss/jit/_helpers.scss */
+/* line 188, ui/scss/jit/_helpers.scss */
 .hide {
   display: none;
 }
 
-/* line 130, ui/scss/jit/_helpers.scss */
+/* line 192, ui/scss/jit/_helpers.scss */
 .menu-gradient {
   background: linear-gradient(45deg, #02101e 0%, #585d60 100%);
 }
 
-/* line 134, ui/scss/jit/_helpers.scss */
+/* line 196, ui/scss/jit/_helpers.scss */
 .footer-logo {
   width: 225px;
 }
 
-/* line 138, ui/scss/jit/_helpers.scss */
+/* line 200, ui/scss/jit/_helpers.scss */
 .pearson-logo {
   width: 200px;
+}
+
+/* line 204, ui/scss/jit/_helpers.scss */
+.box-shadow-bottom {
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+/* line 208, ui/scss/jit/_helpers.scss */
+.hide-overflow {
+  overflow: hidden;
+}
+
+/* line 213, ui/scss/jit/_helpers.scss */
+.flex-child-div > div {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 219, ui/scss/jit/_helpers.scss */
+sup {
+  font-size: .7rem;
 }
 
 /* line 1, ui/scss/jit/_flex.scss */
@@ -2597,11 +2701,21 @@ p + .pe-heading-level6 {
       align-self: center;
 }
 
-/* line 1, ui/scss/jit/_buttons.scss */
+@media (max-width: 640px) {
+  /* line 1, ui/scss/jit/_buttons.scss */
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* line 4, ui/scss/jit/_buttons.scss */
 .menu-btn {
   background-color: transparent;
   color: #107aca;
   border-color: transparent;
+  width: auto;
+  text-align: left;
 }
 /* line 7, ui/scss/jit/_mixins.scss */
 .menu-btn:hover {
@@ -2609,7 +2723,7 @@ p + .pe-heading-level6 {
   border-color: transparent;
 }
 
-/* line 5, ui/scss/jit/_buttons.scss */
+/* line 10, ui/scss/jit/_buttons.scss */
 .save-btn {
   background-color: #6abb6c;
   color: #fff;
@@ -2620,23 +2734,16 @@ p + .pe-heading-level6 {
   background-color: #3c833e;
   border-color: #3c833e;
 }
-@media (max-width: 640px) {
-  /* line 5, ui/scss/jit/_buttons.scss */
-  .save-btn {
-    width: 100%;
-    margin: 5px 0;
-  }
-}
 
 @media (max-width: 640px) {
-  /* line 11, ui/scss/jit/_buttons.scss */
+  /* line 14, ui/scss/jit/_buttons.scss */
   .mobile-resize {
     width: 100%;
     margin: 5px 0;
   }
 }
 
-/* line 14, ui/scss/jit/_buttons.scss */
+/* line 17, ui/scss/jit/_buttons.scss */
 .practice-btn {
   background-color: #ff6137;
   color: #fff;
@@ -2647,18 +2754,11 @@ p + .pe-heading-level6 {
   background-color: #d02c00;
   border-color: #d02c00;
 }
-@media (max-width: 640px) {
-  /* line 14, ui/scss/jit/_buttons.scss */
-  .practice-btn {
-    width: 100%;
-    margin: 5px 0;
-  }
-}
 
-/* line 19, ui/scss/jit/_buttons.scss */
+/* line 21, ui/scss/jit/_buttons.scss */
 .landing-btn {
   background-color: transparent;
-  color: #231f20;
+  color: #000;
   border-color: transparent;
   height: auto;
   display: -ms-flexbox;
@@ -2675,25 +2775,6 @@ p + .pe-heading-level6 {
 .landing-btn:hover {
   background-color: transparent;
   border-color: transparent;
-}
-
-/* line 36, ui/scss/jit/_buttons.scss */
-.dropdown-container ul {
-  width: 40%;
-  padding-left: 0;
-  border-bottom: 1px solid #b3b3b3;
-}
-/* line 41, ui/scss/jit/_buttons.scss */
-.dropdown-container ul li {
-  list-style-type: none;
-}
-/* line 45, ui/scss/jit/_buttons.scss */
-.dropdown-container ul li a {
-  display: block;
-  border: 1px solid #b3b3b3;
-  border-bottom: 0;
-  padding: 15px;
-  cursor: pointer;
 }
 
 /* line 1, ui/scss/jit/_card.scss */
@@ -2719,22 +2800,17 @@ p + .pe-heading-level6 {
 }
 
 /* line 18, ui/scss/jit/_card.scss */
-.card-icon-container {
-  padding: 15px;
-}
-
-/* line 22, ui/scss/jit/_card.scss */
 .card-link {
-  color: #231f20;
+  color: #000;
   text-decoration: none;
 }
-/* line 26, ui/scss/jit/_card.scss */
+/* line 22, ui/scss/jit/_card.scss */
 .card-link:hover {
-  color: #231f20;
+  color: #000;
   text-decoration: underline;
 }
 
-/* line 32, ui/scss/jit/_card.scss */
+/* line 28, ui/scss/jit/_card.scss */
 .truncate {
   white-space: nowrap;
   overflow: hidden;
@@ -2749,11 +2825,8 @@ select {
 }
 
 /* line 8, ui/scss/jit/_forms.scss */
-.icon-container {
+.icon {
   position: absolute;
-}
-/* line 11, ui/scss/jit/_forms.scss */
-.icon-container.right-center {
   right: 15px;
   top: 7px;
 }
@@ -2778,9 +2851,17 @@ select {
   font-size: .7rem;
 }
 
-/* line 2, ui/scss/jit/_layouts.scss */
-.filter-container select {
-  border: 0;
+/* line 1, ui/scss/jit/_layouts.scss */
+.container {
+  padding: 15px;
+}
+/* line 4, ui/scss/jit/_layouts.scss */
+.container.no-padding {
+  padding: 0;
+}
+/* line 8, ui/scss/jit/_layouts.scss */
+.container.no-padding-bottom {
+  padding-bottom: 0;
 }
 
 /* line 1, ui/scss/jit/_overlay.scss */
@@ -2789,7 +2870,7 @@ select {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: #231f20;
+  background: #000;
   top: 0;
   left: 0;
 }
@@ -2822,4 +2903,30 @@ select {
 /* line 35, ui/scss/jit/_overlay.scss */
 .construction-overlay {
   background: #fff;
+}
+
+/* line 1, ui/scss/jit/_calculator.scss */
+.calc-calculator {
+  margin: 3px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.5em;
+  padding: 5px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex: 1;
+      flex: 1;
+}
+/* line 10, ui/scss/jit/_calculator.scss */
+.calc-calculator.small-text {
+  font-size: .8rem;
+  padding: 1rem;
+  -ms-flex: 1;
+      flex: 1;
+}
+/* line 16, ui/scss/jit/_calculator.scss */
+.calc-calculator.space {
+  background: #545454;
+  -ms-flex: 3;
+      flex: 3;
 }

@@ -66,9 +66,13 @@ $(document).ready(function(){
             return;
         } else {
             $('.menu-overlay').addClass('hide');
-            $('.construction-overlay').removeClass('hide');
+            $('.construction-overlay').removeClass('hide')
         }
 
     });
+
+    $('.open-construction').on('click', function(){
+        $('.construction-overlay').removeClass('hide')
+    })
 
 });

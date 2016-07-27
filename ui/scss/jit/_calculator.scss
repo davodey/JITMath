@@ -1,0 +1,20 @@
+.calc-calculator {
+  margin:3px;
+  border-radius:5px;
+  border:0;
+  font-size:1.5em;
+  padding:5px;
+  justify-content: center;
+  flex:1;
+
+  &.small-text {
+    font-size:.8rem;
+    padding:1rem;
+    flex:1;
+  }
+
+  &.space {
+    background:$space-btn;
+    flex:3;
+  }
+}

@@ -5,11 +5,9 @@ select {
 
 
 // contains the down icon over select boxes
-.icon-container {
+.icon {
   position:absolute;
-
-  &.right-center {
-    right:15px;
-    top:7px;
-  }
+  right:15px;
+  top:7px;
 }
+

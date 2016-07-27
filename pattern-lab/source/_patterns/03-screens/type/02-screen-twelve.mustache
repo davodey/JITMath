@@ -1,0 +1,15 @@
+{{> components-navigation}}
+<div class="scroll-calc">
+  {{>components-equation-one}}
+  <div class="container text-center">
+    {{>atoms-large-text(large-text: "Step 1/6") }}
+  </div>
+  <div class="container">
+    {{>atoms-input(placeholder-text: "Enter a Value")}}
+  </div>
+  <div class="container text-center">
+    {{>atoms-save-button(save: "Show Hint", info: true)}}
+    {{>atoms-primary-button(primary: "Submit")}}
+  </div>
+</div>
+{{>components-calculator}}

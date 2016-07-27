@@ -1,5 +1,11 @@
-.filter-container {
-  select {
-    border:0;
+.container {
+  padding:15px;
+
+  &.no-padding {
+    padding:0;
+  }
+  
+  &.no-padding-bottom {
+    padding-bottom:0;
   }
 }
