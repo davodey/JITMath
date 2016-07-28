@@ -1,20 +1,25 @@
 {{> components-navigation}}
-<div class="scroll-calc">
-  {{>components-equation-one}}
+<div id="overflow">
+  {{>components-equation-one(step-one: true, step-two: true)}}
     <div class="container text-center">
-      {{>atoms-large-text(large-text: "Step 1/6") }}
+      {{>atoms-large-text(large-text: 'Step 3/6') }}
     </div>
     <div class="container no-padding-bottom">
-      {{>atoms-input:wrong(placeholder-text: 'Enter Step 1', value: '70')}}
+      {{>atoms-input(placeholder-text: 'Enter Step 3')}}
     </div>
-    <div class="container text-center">
-        <div class="container hint-bg border margin-bottom">
-            <span> Hint: Substitute 7 for x in equation </span>
+    <div id="hintBtnGroup" class="container text-center">
+        <div class="container hint-bg border text-center margin-bottom hide">
+            <span> Hint: Evaluate 7<sup>2</sup> </span>
         </div>
-        <div class="container hint-bg border margin-bottom">
-          {{>atoms-equation-one-step}}
+      {{>atoms-hint-button(hint: "Show Hint", info: true)}}
+      {{>atoms-step-button:hide(step: "Show Me Step")}}
+        <div class="container hint-bg border margin-bottom hide">
+          {{>atoms-equation-three-step}}
         </div>
-      {{>atoms-primary-button(primary: "Submit Step")}}
+      {{>atoms-submit-step-button(text: "Submit", url: "{{link.screens-screen-fifteen}}")}}
     </div>
 </div>
-{{>components-calculator}}
+<div id="calculatorContainer" data-answer="49 + 2 x 14 - 19">
+  {{>components-calculator}}
+</div>
+

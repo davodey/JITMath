@@ -2572,7 +2572,7 @@ p + .pe-heading-level6 {
 
 /* line 157, ui/scss/jit/_helpers.scss */
 .scroll-calc {
-  height: 370px;
+  height: 300px;
   overflow: scroll;
   -webkit-overflow-scrolling: touch;
 }
