@@ -1,7 +1,8 @@
 'use strict';
 $(document).ready(function(){
     var answerGroup = $('#answerGroup'),
-        icon = $('.answer i');
+        calculator = $('#calculator'),
+        calcInput = $('#calculatorContainer').attr('data-answer');
 
     // need to re-write all of this
 
@@ -74,5 +75,32 @@ $(document).ready(function(){
     $('.open-construction').on('click', function(){
         $('.construction-overlay').removeClass('hide');
     })
+
+    // Type Section
+    $('#i3').focus(function(){
+        console.log(calcInput);
+        $('#overflow').addClass('scroll-calc');
+        $('#calculator').removeClass('hide');
+    });
+
+    calculator.on('click', 'button', function() {
+        $('#i3').val(calcInput);
+        $('.submit-step-btn').prop('disabled', false);
+        $('#overflow').removeClass('scroll-calc');
+        $('#calculator').addClass('hide');
+    });
+
+    $('#hintBtnGroup').on('click', 'button', function(){
+        if ($(this).hasClass('hint-btn')) {
+            $(this).prev().removeClass('hide');
+            $(this).next().removeClass('hide');
+            $(this).remove();
+        } else if ($(this).hasClass('step-btn')) {
+            $(this).next().removeClass('hide');
+            $(this).remove();
+        }
+    });
+
+
 
 });

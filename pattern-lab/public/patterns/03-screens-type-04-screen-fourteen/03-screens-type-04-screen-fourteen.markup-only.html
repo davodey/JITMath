@@ -10,7 +10,7 @@
  <div class="menu-overlay white menu-gradient hide padding scroll">
     <div class="container no-padding flex space-between">
         <div class="container no-padding">
-            <img class="pearson-logo" src="&#x2F;JITMath/images/PearsonLogo.png" alt="logo">
+            <img class="pearson-logo" src="/images/PearsonLogo.png" alt="logo">
         </div>
         <div id="mobile-menu" class="text-right align-self-center">
             <button class="pe-btn pe-btn--large menu-btn">
@@ -22,9 +22,9 @@
     <p class="text-center gray padding">Just In Time Math</p>
     <nav>
         <ul>
-            <li><a class="home" href="&#x2F;JITMath&#x2F;patterns&#x2F;03-screens-00-screen-one&#x2F;03-screens-00-screen-one.html"><span class="fa fa-home fa-lg" aria-hidden="true"></span>Home</a>
+            <li><a class="home" href="&#x2F;patterns&#x2F;03-screens-00-screen-one&#x2F;03-screens-00-screen-one.html"><span class="fa fa-home fa-lg" aria-hidden="true"></span>Home</a>
             </li>
-            <li><a href="&#x2F;JITMath&#x2F;patterns&#x2F;03-screens-browse-01-screen-two&#x2F;03-screens-browse-01-screen-two.html"><span class="fa fa-folder-open fa-lg" aria-hidden="true"></span>Browse</a>
+            <li><a href="&#x2F;patterns&#x2F;03-screens-browse-01-screen-two&#x2F;03-screens-browse-01-screen-two.html"><span class="fa fa-folder-open fa-lg" aria-hidden="true"></span>Browse</a>
             </li>
             <li><a href="#"><span class="fa fa-search fa-lg" aria-hidden="true"></span>Search</a>
             </li>
@@ -39,7 +39,7 @@
         </ul>
     </nav>
     <div class="container no-padding text-center">
-        <img class="footer-logo" src="&#x2F;JITMath/images/WolframAlpha-logo.svg" alt="logo">
+        <img class="footer-logo" src="/images/WolframAlpha-logo.svg" alt="logo">
     </div>
 </div>
 
@@ -52,42 +52,56 @@
 
 
 
-<div class="scroll-calc">
+<div id="overflow">
   <div class="container">
   <div class="border-bottom padding-bottom">
       <strong class="margin-right">Problem:</strong>
-      <span>X<sup>2</sup> + 2(X+7) - 19 <em>where X</em> = 7</span>
-
-
+<span>X<sup>2</sup> + 2(X+7) - 19 <em>where X</em> = 7</span>
   </div>
+      <div class="padding-top padding-bottom">
+          <strong class="margin-right">Step 1:</strong> <span class="border padding-light">
+    <strong class="green">7</strong><sup>2</sup> + 2(<strong class="green">7</strong>+7) - 19</span>
+
+      </div>
+      <div class="padding-top padding-bottom">
+          <strong class="margin-right">Step 2:</strong> <span class="border padding-light margin-right">7+7 = 14</span><span class="padding-light margin-left padding-light">7<sup>2</sup> + 2 x <strong class="green">14</strong> - 19</span>
+
+      </div>
 </div>
 
     <div class="container text-center">
-      <span class="pe-title pe-title--large">Step 1&#x2F;6</span>
+      <span class="pe-title pe-title--large">Step 3&#x2F;6</span>
 
     </div>
     <div class="container no-padding-bottom">
-      <div class="pe-input wrong">
-    <input class="full-width" type="text" id="i3" placeholder="Enter Step 1" value="70">
+      <div class="pe-input ">
+    <input class="full-width" type="text" id="i3" placeholder="Enter Step 3" value="" readonly="true">
 </div>
 
     </div>
-    <div class="container text-center">
-        <div class="container hint-bg border margin-bottom">
-            <span> Hint: Substitute 7 for x in equation </span>
+    <div id="hintBtnGroup" class="container text-center">
+        <div class="container hint-bg border text-center margin-bottom hide">
+            <span> Hint: Evaluate 7<sup>2</sup> </span>
         </div>
-        <div class="container hint-bg border margin-bottom">
-          <span class="border padding-light">
-    <strong class="green">7</strong><sup>2</sup> + 2(<strong class="green">7</strong>+7) - 19</span>
-
-        </div>
-      <button class="pe-btn pe-btn--primary pe-btn--large " onclick="window.location.href=''">Submit Step
+      <button class="pe-btn pe-btn--primary pe-btn--large save-btn hint-btn">Show Hint
+      <span class="fa fa-info-circle" aria-hidden="true"></span>
 </button>
 
+      <button class="pe-btn pe-btn--primary pe-btn--large save-btn step-btn hide">Show Me Step
+</button>
+
+        <div class="container hint-bg border margin-bottom hide">
+          <span class="border padding-light margin-right">7<sup>2</sup> = 49</span>
+<span class="padding-light margin-left padding-light"><strong class="green">49</strong> + 2 x 14 - 19</span>
+
+        </div>
+      <button disabled class="pe-btn pe-btn--primary pe-btn--large submit-step-btn" onclick="window.location.href='&#x2F;patterns&#x2F;03-screens-type-05-screen-fifteen&#x2F;03-screens-type-05-screen-fifteen.html'">Submit</button>
+
 
     </div>
 </div>
-<div class="bottom-stick pos-absolute full-width">
+<div id="calculatorContainer" data-answer="49 + 2 x 14 - 19">
+  <div id="calculator" class="bottom-stick pos-absolute full-width hide">
   <div class="container no-padding special-bg flex-child-div">
     <div class="row flex-child-div">
       <button class="calc-calculator no-bg black ">
@@ -266,4 +280,6 @@
 
 </div>
 
+
+</div>
 

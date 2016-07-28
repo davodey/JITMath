@@ -1,16 +1,24 @@
 {{> components-navigation}}
-<div class="scroll-calc">
-  {{>components-equation-one(step-one: true)}}
+<div id="overflow">
+  {{>components-equation-one(step-one: true, step-two: true, step-three: true)}}
     <div class="container text-center">
-      {{>atoms-large-text(large-text: 'Step 2/6') }}
+      {{>atoms-large-text(large-text: 'Step 4/6') }}
     </div>
     <div class="container no-padding-bottom">
-      {{>atoms-input(placeholder-text: 'Enter Step 2')}}
+      {{>atoms-input(placeholder-text: 'Enter Step 4')}}
     </div>
-    <div class="container text-center">
-      {{>atoms-save-button(save: "Show Hint", info: true)}}
-      {{>atoms-primary-button(primary: "Submit")}}
+    <div id="hintBtnGroup" class="container text-center">
+        <div class="container hint-bg border text-center margin-bottom hide">
+            <span> Hint: Multiply 2 and 14 together</span>
+        </div>
+      {{>atoms-hint-button(hint: "Show Hint", info: true)}}
+      {{>atoms-step-button:hide(step: "Show Me Step")}}
+        <div class="container hint-bg border margin-bottom hide">
+          {{>atoms-equation-four-step}}
+        </div>
+      {{>atoms-submit-step-button(text: "Submit", url: "{{link.screens-screen-sixteen}}")}}
     </div>
 </div>
-
-{{>components-calculator}}
+<div id="calculatorContainer" data-answer="49 + 28 - 19">
+  {{>components-calculator}}
+</div>

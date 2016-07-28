@@ -1,19 +1,24 @@
 {{> components-navigation}}
-<div class="scroll-calc">
-  {{>components-equation-one(step-one: true)}}
-  <div class="container text-center">
-    {{>atoms-large-text(large-text: 'Step 2/6') }}
-  </div>
-  <div class="container">
-    {{>atoms-input(placeholder-text: 'Enter Step 2')}}
-  </div>
-  <div class="container text-center">
-      <div class="container hint-bg border text-center margin-bottom">
-          <span> Hint: Evaluate 7+7 </span>
-      </div>
-    {{>atoms-save-button(save: "Show Me Step")}}
-    {{>atoms-primary-button(primary: "Submit Step")}}
-  </div>
-
+<div id="overflow">
+  {{>components-equation-one(step-one: true, step-two: true, step-three: true, step-four: true)}}
+    <div class="container text-center">
+      {{>atoms-large-text(large-text: 'Step 5/6') }}
+    </div>
+    <div class="container no-padding-bottom">
+      {{>atoms-input(placeholder-text: 'Enter Step 5')}}
+    </div>
+    <div id="hintBtnGroup" class="container text-center">
+        <div class="container hint-bg border text-center margin-bottom hide">
+            <span> Hint: Multiply 2 and 14 together</span>
+        </div>
+      {{>atoms-hint-button(hint: "Show Hint", info: true)}}
+      {{>atoms-step-button:hide(step: "Show Me Step")}}
+        <div class="container hint-bg border margin-bottom hide">
+          {{>atoms-equation-five-step}}
+        </div>
+      {{>atoms-submit-step-button(text: "Submit", url: "{{link.screens-screen-seventeen}}")}}
+    </div>
 </div>
-{{>components-calculator}}
+<div id="calculatorContainer" data-answer="77 - 19">
+  {{>components-calculator}}
+</div>

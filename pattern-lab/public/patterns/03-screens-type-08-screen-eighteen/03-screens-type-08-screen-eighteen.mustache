@@ -1,16 +1,9 @@
 {{> components-navigation}}
-<div class="scroll-calc">
-  {{>components-equation-one(step-one: true, step-two: true)}}
-    <div class="container text-center">
-      {{>atoms-large-text(large-text: 'Step 3/6') }}
-    </div>
-    <div class="container no-padding-bottom">
-      {{>atoms-input(placeholder-text: 'Enter Step 3')}}
-    </div>
-    <div class="container text-center">
-      {{>atoms-save-button(save: "Show Hint", info: true)}}
-      {{>atoms-primary-button(primary: "Submit")}}
-    </div>
+{{>components-equation-one(step-one: true, step-two: true, step-three: true, step-four: true, step-five: true, step-six: true)}}
+<div class="container">
+  {{>atoms-save-button(save: "Save to My Problems")}}
+  {{>atoms-primary-button(primary: "Export Problem", added-class: "mobile-resize")}}
+  {{>atoms-practice-button(practice: "Practice Similar Problems")}}
 </div>
 
 {{>components-calculator}}
